@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "gopeak": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "F:/Universe/Ant of Empires/node_modules/gopeak/build/index.js"
+      ],
+      "env": {
+        "GODOT_PATH": "F:/tools/godot/Godot_v4.4.1-stable_win64_console.exe",
+        "GOPEAK_TOOL_PROFILE": "compact"
+      }
+    },
+    "godot-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "F:/Universe/Ant of Empires/godot-mcp/build/index.js"
+      ],
+      "env": {
+        "GODOT_PATH": "F:/tools/godot/Godot_v4.4.1-stable_win64_console.exe"
+      }
+    },
+    "godot-docs": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@fernforestgames/mcp-server-godot-docs"
+      ],
+      "env": {
+        "GODOT_PATH": "F:/tools/godot/Godot_v4.4.1-stable_win64_console.exe"
+      }
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp"
+      ],
+      "env": {}
+    }
+  }
+}
